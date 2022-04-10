@@ -3,7 +3,7 @@ import { Message } from 'node-nats-streaming';
 import { Ticket } from '../../../models/Ticket';
 import { natsWrapper } from '../../../nats-wrapper';
 import { OrderCancelledListener } from '../order-cancelled-listener';
-import { OrderCancelledEvent } from '../../../../../common/build/events/order-cancelled-event';
+import { OrderCancelledEvent } from '@eahbtickets/common';
 
 const setup = async () => {
   const listener = new OrderCancelledListener(natsWrapper.client);
