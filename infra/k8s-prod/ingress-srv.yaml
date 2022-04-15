@@ -62,7 +62,7 @@ metadata:
   name: ingress-nginx-controller
   namespace: ingress-nginx
 spec:
-  type: loadBalancer
+  type: LoadBalancer
   externalTrafficPolicy: Local
   ports:
     - name: http
